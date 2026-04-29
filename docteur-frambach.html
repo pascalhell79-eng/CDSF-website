@@ -542,30 +542,31 @@
     }
     .pratique-header .section-title { color: var(--texte); }
     .pratique-header .section-tag { color: var(--or); }
-    .pratique-grid {
+    .pratique-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: var(--surface-alt);
-      border: 1px solid var(--surface-alt);
-      border-radius: 8px;
-      overflow: hidden;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
     }
     .pratique-card {
-      background: rgba(255,255,255,0.04);
+      grid-column: span 2;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
       padding: 2rem 1.75rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      transition: background 0.2s;
+      transition: background 0.2s, box-shadow 0.2s;
     }
-    .pratique-card:hover { background: rgba(255,255,255,0.07); }
+    .pratique-card:nth-child(4),
+    .pratique-card:nth-child(5) { grid-column: span 3; }
+    .pratique-card:hover { background: var(--surface-alt); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
     .pratique-card-icon {
       width: 40px;
       height: 40px;
       border-radius: 50%;
       background: var(--surface-alt);
-      border: 1px solid var(--surface-alt);
+      border: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -580,7 +581,7 @@
     }
     .pratique-card p {
       font-size: 14px;
-      color: var(--texte);
+      color: var(--texte-doux);
       line-height: 1.7;
     }
 
@@ -649,7 +650,10 @@
       .fact-item { border-bottom: 1px solid rgba(43,36,32,0.15); }
       .fact-item:nth-child(2n) { border-right: none; }
       .approche-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-      .pratique-grid { grid-template-columns: 1fr; }
+      .pratique-cards { grid-template-columns: 1fr; }
+      .pratique-card,
+      .pratique-card:nth-child(4),
+      .pratique-card:nth-child(5) { grid-column: span 1; }
       footer .footer-top { flex-direction: column; }
     }
   </style>
@@ -856,7 +860,7 @@
         <span class="section-tag">Informations pratiques</span>
         <h2 class="section-title">Ce que vous devez savoir</h2>
       </div>
-      <div class="pratique-grid">
+      <div class="pratique-cards">
         <div class="pratique-card">
           <div class="pratique-card-icon">
             <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
@@ -885,6 +889,13 @@
           <h3>Réseau de spécialistes</h3>
           <p>Stéphanie Frambach collabore étroitement avec des orthodontistes, parodontologues et implantologues de la région. Si votre situation le nécessite, vous bénéficiez d'une orientation vers le bon spécialiste.</p>
         </div>
+        <div class="pratique-card">
+          <div class="pratique-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3>Agréée Défense nationale</h3>
+          <p>Le cabinet est agréé pour les membres du personnel de la Défense nationale.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -895,7 +906,7 @@
       <div class="footer-top">
       <div class="footer-bottom">
         <p class="footer-copy">© 2026 Cabinet Dentaire Stéphanie Frambach • Rue Bureau 36/002, 4621 Fléron</p>
-        <p class="footer-copy">Rendez-vous par téléphone uniquement — <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-de-confidentialite.html">Confidentialité</a></p>
+        <p class="footer-copy">Rendez-vous par téléphone uniquement — <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-de-confidentialite.html">Confidentialité</a> · <a href="https://www.google.com/search?sca_esv=3df39b1f29bc2f8f&sxsrf=ANbL-n7Ypntmsi2mDtUpsgQH4TIjG6ddMg:1777442916231&si=AL3DRZFIhG6pAqfNLal55wUTwygCG0fClF3UxiOmgw9Hq7nbWQ_9FLi091JX9YJ6JtrWbzt2RheUGinvZo4nqyVSPJp3hwSlm3Px4ykmmLHrIBm7LLf8hU2JE641ZBtiujvEfCTGknKCRJobtBTjHGIUFoP81W72d01PgXNHRb6j4V80ic9vRD8%3D&q=Cabinet+dentaire+St%C3%A9phanie+Frambach+Avis&sa=X&ved=2ahUKEwi1qIXtspKUAxWPzgIHHQCEPckQ0bkNegQIRBAF&biw=3440&bih=1271&dpr=1" target="_blank" rel="noopener noreferrer">Laisser un avis</a></p>
       </div>
     </div>
   </footer>
