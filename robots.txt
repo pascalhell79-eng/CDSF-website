@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /images/
+
+# Remplacer https://www.frambach-dentiste.be par le vrai domaine
+Sitemap: https://www.frambach-dentiste.be/sitemap.xml

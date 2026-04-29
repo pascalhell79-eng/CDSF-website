@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stéphanie Frambach — Dentiste généraliste à Fléron</title>
+  <meta name="description" content="Découvrez le parcours et l'approche de Stéphanie Frambach, dentiste généraliste à Fléron (Liège). Cabinet accessible, soins pour enfants et adultes, médecin conventionné.">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="canonical" href="https://www.frambach-dentiste.be/docteur-frambach.html">
+  <meta property="og:type"         content="website">
+  <meta property="og:site_name"    content="Cabinet Dentaire Stéphanie Frambach">
+  <meta property="og:locale"       content="fr_BE">
+  <meta property="og:url"          content="https://www.frambach-dentiste.be/docteur-frambach.html">
+  <meta property="og:title"        content="Stéphanie Frambach — Dentiste généraliste à Fléron">
+  <meta property="og:description"  content="Découvrez le parcours et l'approche de Stéphanie Frambach, dentiste généraliste à Fléron (Liège). Cabinet accessible, soins pour enfants et adultes, médecin conventionné.">
+  <meta property="og:image"        content="https://www.frambach-dentiste.be/images/og-cover.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script>!function(){var t=localStorage.getItem("theme"),d=window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.setAttribute("data-theme",t||(d?"dark":"light"))}();</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #FAF7F2;
+      --surface:       #FFFFFF;
+      --surface-alt:   #F0EAE0;
+      --surface-deep:  #DDD5C8;
+      --border:        #DDD5C8;
+      --border-subtle: #EDE8E1;
+      --texte:         #2B2420;
+      --texte-doux:    #7A6E67;
+      --orange:        #D4521C;
+      --orange-hover:  #B84418;
+      --orange-soft:   #F5E5DC;
+      --or:            #C49A3C;
+      --or-pale:       #DDB96A;
+      --or-dk:         #9A7522;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans:  'DM Sans', system-ui, sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg:            #130E0B;
+      --surface:       #1C1410;
+      --surface-alt:   #261A14;
+      --surface-deep:  #301F17;
+      --border:        #3A2920;
+      --border-subtle: #251A14;
+      --texte:         #F2EDE6;
+      --texte-doux:    #A89990;
+      --orange:        #E0622A;
+      --orange-hover:  #F07040;
+      --orange-soft:   #2E1A10;
+      --or:            #D4A848;
+      --or-pale:       #C49A3C;
+      --or-dk:         #A87C28;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      color: var(--texte);
+      background: var(--bg);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      background: var(--bg);
+      border-bottom: 1px solid var(--surface-alt);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 44px;
+    }
+    .nav-logo {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+    .nav-logo-placeholder {
+      display: none;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--orange);
+      line-height: 1.2;
+    }
+    .nav-logo-placeholder span {
+      display: block;
+      font-size: 11px;
+      font-family: var(--sans);
+      font-weight: 300;
+      color: var(--texte-doux);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .nav-logo[data-error="true"] { display: none; }
+    .nav-logo[data-error="true"] ~ .nav-logo-placeholder { display: block; }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--texte);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+      position: relative;
+    }
+    .nav-links a:hover { color: var(--orange); background: var(--bg); }
+    .nav-links a.active { color: var(--orange); font-weight: 500; }
+    .nav-links a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 16px;
+      right: 16px;
+      height: 2px;
+      background: var(--orange);
+      border-radius: 1px;
+    }
+    .nav-cta {
+      background: var(--orange) !important;
+      color: var(--surface) !important;
+      padding: 8px 20px !important;
+      border-radius: 4px !important;
+      font-weight: 500 !important;
+      margin-left: 8px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--orange-hover) !important; }
+    .nav-theme-li { display: flex; align-items: center; margin-left: 4px; }
+    .theme-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 8px;
+      color: var(--texte-doux);
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .theme-toggle:hover { color: var(--orange); background: var(--surface-alt); }
+    .theme-toggle svg { width: 18px; height: 18px; }
+    .theme-toggle .icon-sun { display: none; }
+    .theme-toggle .icon-moon { display: block; }
+    [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+    [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+
+    /* ─── PAGE HERO ─── */
+    .page-hero {
+      background: var(--surface-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: none;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 2rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1rem;
+      animation: fadeUp 0.6s ease both;
+    }
+    .hero-content h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      color: var(--orange);
+      line-height: 1.1;
+      margin-bottom: 0.4rem;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    .hero-content h1 em {
+      display: block;
+      font-size: 0.55em;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--orange-hover);
+      margin-top: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+    .hero-content p {
+      font-size: 15px;
+      color: var(--texte);
+      line-height: 1.85;
+      max-width: 480px;
+      margin-top: 1.5rem;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: var(--surface);
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #DDB96A; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: var(--surface);
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); }
+
+    /* Photo dans le hero */
+    .hero-photo {
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+    .photo-frame {
+      aspect-ratio: 3/4;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      overflow: hidden;
+      position: relative;
+    }
+    .photo-frame::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to top, rgba(43,36,32,0.70), transparent);
+      pointer-events: none;
+    }
+    .photo-frame svg { width: 52px; height: 52px; stroke: var(--or-pale); fill: none; stroke-width: 0.8; opacity: 0.35; }
+    .photo-frame p { font-size: 12px; color: rgba(255,255,255,0.3); letter-spacing: 0.06em; }
+    .photo-caption {
+      position: absolute;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      right: 1.25rem;
+      z-index: 2;
+    }
+    .photo-caption strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 15px;
+      color: var(--surface);
+      font-weight: 500;
+    }
+    .photo-caption span {
+      font-size: 12px;
+      color: var(--or-pale);
+      font-style: italic;
+    }
+
+    /* ─── FACTS BAND ─── */
+    .facts-band {
+      background: var(--surface);
+      border-bottom: 1px solid var(--surface-alt);
+      padding: 0;
+    }
+    .facts-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .fact-item {
+      padding: 1.6rem 1.5rem;
+      border-right: 1px solid rgba(43,36,32,0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .fact-item:last-child { border-right: none; }
+    .fact-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(43,36,32,0.55);
+    }
+    .fact-value {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--texte);
+      line-height: 1.25;
+    }
+
+    /* ─── SECTION GÉNÉRIQUE ─── */
+    .section-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 500;
+      color: var(--texte);
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ─── SECTION APPROCHE ─── */
+    .approche-section {
+      background: var(--surface);
+      padding: 5rem 2rem;
+    }
+    .approche-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .approche-lead {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--orange);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      padding-left: 1.25rem;
+      border-left: 2px solid var(--or);
+    }
+    .approche-text p {
+      font-size: 15px;
+      color: var(--texte-doux);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+    .approche-text p:last-child { margin-bottom: 0; }
+
+    /* Valeurs */
+    .valeurs-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--surface-alt);
+      border: 1px solid var(--surface-alt);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .valeur-item {
+      background: var(--bg);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: background 0.2s;
+    }
+    .valeur-item:hover { background: #F0EAE0; }
+    .valeur-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--surface);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid var(--surface-alt);
+    }
+    .valeur-icon svg { width: 16px; height: 16px; stroke: var(--orange); fill: none; stroke-width: 1.5; }
+    .valeur-content { flex: 1; }
+    .valeur-titre {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--texte);
+      margin-bottom: 3px;
+    }
+    .valeur-desc {
+      font-size: 13px;
+      color: var(--texte-doux);
+      line-height: 1.6;
+    }
+
+    /* ─── SECTION PARCOURS ─── */
+    .parcours-section {
+      background: var(--bg);
+      padding: 5rem 2rem;
+    }
+    .parcours-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .parcours-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: var(--surface-alt);
+    }
+    .timeline-item {
+      display: flex;
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      width: 41px;
+      height: 41px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--surface-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-dot svg { width: 16px; height: 16px; stroke: var(--orange); fill: none; stroke-width: 1.5; }
+    .timeline-dot.highlight {
+      background: var(--texte);
+      border-color: var(--texte);
+    }
+    .timeline-dot.highlight svg { stroke: var(--or-pale); }
+    .timeline-body { padding-top: 8px; }
+    .timeline-date {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 4px;
+    }
+    .timeline-title {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--texte);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .timeline-desc {
+      font-size: 14px;
+      color: var(--texte-doux);
+      line-height: 1.65;
+    }
+
+    /* ─── SECTION PRATIQUE ─── */
+    .pratique-section {
+      background: var(--surface);
+      padding: 5rem 2rem;
+    }
+    .pratique-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .pratique-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .pratique-header .section-title { color: var(--texte); }
+    .pratique-header .section-tag { color: var(--or); }
+    .pratique-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--surface-alt);
+      border: 1px solid var(--surface-alt);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .pratique-card {
+      background: rgba(255,255,255,0.04);
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+    .pratique-card:hover { background: rgba(255,255,255,0.07); }
+    .pratique-card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface-alt);
+      border: 1px solid var(--surface-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pratique-card-icon svg { width: 18px; height: 18px; stroke: var(--or); fill: none; stroke-width: 1.5; }
+    .pratique-card h3 {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--texte);
+      line-height: 1.3;
+    }
+    .pratique-card p {
+      font-size: 14px;
+      color: var(--texte);
+      line-height: 1.7;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--surface-deep);
+      padding: 3rem 2rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 1.5rem;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 12px; color: var(--texte); }
+    .footer-copy a { color: inherit; text-decoration: underline; opacity: 0.7; }
+    .footer-copy a:hover { opacity: 1; }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; flex-direction: column; gap: 4px; }
+      .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--texte); border-radius: 1px; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0; right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--surface-alt);
+        padding: 1rem;
+        gap: 4px;
+      }
+      .nav-links.open a { padding: 10px 12px; }
+      .nav-cta { margin-left: 0; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+      }
+      .hero-photo { order: -1; }
+      .photo-frame { aspect-ratio: 1/1; max-width: 280px; margin: 0 auto; }
+      .facts-inner { grid-template-columns: 1fr 1fr; }
+      .fact-item { border-bottom: 1px solid rgba(43,36,32,0.15); }
+      .fact-item:nth-child(2n) { border-right: none; }
+      .approche-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .pratique-grid { grid-template-columns: 1fr; }
+      footer .footer-top { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <a href="index.html" class="nav-brand">
+      <img
+        src="images/logo-frambach.svg"
+        alt="Cabinet Dentaire Stéphanie Frambach"
+        class="nav-logo"
+        onerror="this.setAttribute('data-error','true')"
+      />
+      <span class="nav-logo-placeholder">
+        Cabinet Dentaire Stéphanie Frambach
+        <span>Dentiste généraliste · Fléron</span>
+      </span>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="docteur-frambach.html" class="active">Stéphanie Frambach</a></li>
+      <li><a href="le-cabinet.html">Le cabinet</a></li>
+      <li><a href="les-soins.html">Les soins</a></li>
+      <li><a href="urgences.html">Urgences</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      <li class="nav-theme-li"><button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer le thème"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Votre praticienne</p>
+        <h1>
+          Stéphanie Frambach
+          <em>Dentiste généraliste · Fléron</em>
+        </h1>
+        <p>Dentiste exerçant à Fléron depuis plusieurs années, Stéphanie Frambach assure une prise en charge complète des soins bucco-dentaires pour les enfants comme pour les adultes, dans une relation de confiance durable avec ses patients.</p>
+        <div class="hero-actions">
+          <a href="tel:0435536355" class="btn-primary">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Prendre rendez-vous
+          </a>
+          <a href="les-soins.html" class="btn-outline">Nos soins →</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <p>Photo à ajouter</p>
+          <div class="photo-caption">
+            <strong>Stéphanie Frambach</strong>
+            <span>Dentiste généraliste · Fléron</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS BAND -->
+  <div class="facts-band">
+    <div class="facts-inner">
+      <div class="fact-item">
+        <span class="fact-label">Spécialité</span>
+        <span class="fact-value">Médecine dentaire généraliste</span>
+      </div>
+      <div class="fact-item">
+        <span class="fact-label">Patients</span>
+        <span class="fact-value">Enfants & adultes</span>
+      </div>
+      <div class="fact-item">
+        <span class="fact-label">Convention</span>
+        <span class="fact-value">Conventionné INAMI</span>
+      </div>
+      <div class="fact-item">
+        <span class="fact-label">Rendez-vous</span>
+        <span class="fact-value">Par téléphone</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPROCHE & VALEURS -->
+  <section class="approche-section">
+    <div class="approche-inner">
+      <div class="approche-text">
+        <span class="section-tag">Son approche</span>
+        <h2 class="section-title">Une dentisterie familiale,<br> fondée sur l'écoute et la confiance.</h2>
+        <p class="approche-lead">Bien soigner, c'est d'abord prendre le temps d'écouter, de dialoguer et de conseiller.</p>
+        <p>Dans mon cabinet, chaque patient est accueilli avec attention. La relation humaine occupe une place centrale : comprendre votre situation, expliquer les soins simplement, répondre à vos questions et avancer à votre rythme.</p>
+        <p>Nous accordons une grande importance à la prévention, car un suivi régulier permet souvent d'éviter des traitements plus lourds. Enfants, adultes et familles y trouvent un accompagnement durable, dans un cadre calme, accessible et personnalisé.</p>
+      </div>
+
+      <div>
+        <span class="section-tag">Ce qui guide sa pratique</span>
+        <div class="valeurs-grid" style="margin-top: 0.75rem;">
+          <div class="valeur-item">
+            <div class="valeur-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div class="valeur-content">
+              <div class="valeur-titre">Écoute & disponibilité</div>
+              <div class="valeur-desc">Chaque consultation commence par comprendre votre situation et vos inquiétudes, sans précipitation.</div>
+            </div>
+          </div>
+          <div class="valeur-item">
+            <div class="valeur-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="valeur-content">
+              <div class="valeur-titre">Prévention en priorité</div>
+              <div class="valeur-desc">Un contrôle régulier et un détartrage annuel réduisent significativement le risque de soins complexes.</div>
+            </div>
+          </div>
+          <div class="valeur-item">
+            <div class="valeur-icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div class="valeur-content">
+              <div class="valeur-titre">Transparence du diagnostic</div>
+              <div class="valeur-desc">Le plan de traitement est expliqué clairement, avec les options possibles et les priorités médicales.</div>
+            </div>
+          </div>
+          <div class="valeur-item">
+            <div class="valeur-icon">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="valeur-content">
+              <div class="valeur-titre">Matériel moderne</div>
+              <div class="valeur-desc">Radiographie numérique et équipements récents pour des soins précis et un confort accru.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section class="parcours-section">
+    <div class="parcours-inner">
+      <div class="parcours-header">
+        <span class="section-tag">Parcours</span>
+        <h2 class="section-title">Formation & exercice professionnel</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-date">Formation initiale</div>
+            <div class="timeline-title">Master en Sciences Dentaires</div>
+            <div class="timeline-desc">Université de Liège (ULiège) — Formation complète en médecine dentaire généraliste, couvrant l'ensemble des disciplines : chirurgie buccale, endodontie, parodontologie, prothèse et soins conservateurs.</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-date">Formation continue</div>
+            <div class="timeline-title">Développement professionnel continu</div>
+            <div class="timeline-desc">Engagement actif dans des formations continues et échanges entre praticiens (peer reviews) pour garantir des soins de qualité optimale, dans le respect des standards d'accréditation INAMI.</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-date">Conformité des équipements radiologiques</div>
+            <div class="timeline-title">Autorisation d'exploitation AFCN — Contrôle Vincotte</div>
+            <div class="timeline-desc">Le cabinet dispose d'une autorisation d'exploitation délivrée par l'Agence Fédérale de Contrôle Nucléaire (AFCN) pour l'utilisation des rayonnements ionisants (radiographie dentaire). Les installations radiologiques sont contrôlées par Vincotte, organisme agréé.</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot highlight">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-date">Depuis 2011 </div>
+            <div class="timeline-title">Cabinet dentaire à Fléron</div>
+            <div class="timeline-desc">Exercice libéral à Fléron (Rue Bureau 36/002), avec une patientèle composée d'enfants et d'adultes de la région liégeoise. Dentiste conventionnée INAMI, tiers payant appliqué — gratuité des soins dentaires jusqu'à 19 ans.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INFOS PRATIQUES -->
+  <section class="pratique-section">
+    <div class="pratique-inner">
+      <div class="pratique-header">
+        <span class="section-tag">Informations pratiques</span>
+        <h2 class="section-title">Ce que vous devez savoir</h2>
+      </div>
+      <div class="pratique-grid">
+        <div class="pratique-card">
+          <div class="pratique-card-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h3>Dentiste conventionnée INAMI</h3>
+          <p>Les soins sont remboursés aux tarifs INAMI en vigueur, sans dépassement d'honoraires pour les actes conventionnés. Apportez votre carte d'identité à chaque visite.</p>
+        </div>
+        <div class="pratique-card">
+          <div class="pratique-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Enfants & adultes — Gratuité jusqu'à 19 ans</h3>
+          <p>Le cabinet accueille les patients de tous âges. Les soins dentaires sont gratuits (quote-part patient) jusqu'à 19 ans pour les affiliés en règle.</p>
+        </div>
+        <div class="pratique-card">
+          <div class="pratique-card-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Tiers payant — Carte d'identité obligatoire</h3>
+          <p>Vous payez uniquement votre quote-part. Carte d'identité obligatoire — sans celle-ci, paiement intégral à régler.</p>
+        </div>
+        <div class="pratique-card">
+          <div class="pratique-card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 19.07a10 10 0 010-14.14"/></svg>
+          </div>
+          <h3>Réseau de spécialistes</h3>
+          <p>Stéphanie Frambach collabore étroitement avec des orthodontistes, parodontologues et implantologues de la région. Si votre situation le nécessite, vous bénéficiez d'une orientation vers le bon spécialiste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Cabinet Dentaire Stéphanie Frambach • Rue Bureau 36/002, 4621 Fléron</p>
+        <p class="footer-copy">Rendez-vous par téléphone uniquement — <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-de-confidentialite.html">Confidentialité</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
