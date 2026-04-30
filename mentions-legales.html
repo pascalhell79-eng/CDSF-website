@@ -7,14 +7,14 @@
   <meta name="description" content="Mentions légales du site du Cabinet Dentaire Stéphanie Frambach à Fléron.">
   <meta name="robots" content="noindex, follow">
   <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="canonical" href="https://www.frambach-dentiste.be/mentions-legales.html">
+  <link rel="canonical" href="https://www.dentisteframbach.com/mentions-legales.html">
   <meta property="og:type"         content="website">
   <meta property="og:site_name"    content="Cabinet Dentaire Stéphanie Frambach">
   <meta property="og:locale"       content="fr_BE">
-  <meta property="og:url"          content="https://www.frambach-dentiste.be/mentions-legales.html">
+  <meta property="og:url"          content="https://www.dentisteframbach.com/mentions-legales.html">
   <meta property="og:title"        content="Mentions légales — Cabinet Dentaire Stéphanie Frambach · Fléron">
   <meta property="og:description"  content="Mentions légales du site du Cabinet Dentaire Stéphanie Frambach à Fléron.">
-  <meta property="og:image"        content="https://www.frambach-dentiste.be/images/og-cover.jpg">
+  <meta property="og:image"        content="https://www.dentisteframbach.com/images/og-cover.jpg">
   <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -111,7 +111,7 @@
     .nav-cta:hover { background: var(--orange-hover) !important; }
     .nav-theme-li { display: flex; align-items: center; margin-left: 4px; }
     .theme-toggle {
-      order: 3;
+      order: 4;
       background: none;
       border: none;
       cursor: pointer;
@@ -128,7 +128,7 @@
     .theme-toggle .icon-moon { display: block; }
     [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
     [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; order: 3; }
 
     /* ─── HERO ─── */
     .page-hero {
@@ -247,8 +247,8 @@
     /* ─── MOBILE ─── */
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .nav-hamburger { display: flex; flex-direction: column; gap: 4px; }
-      .theme-toggle { margin-left: auto; order: 3; }
+      .nav-hamburger { display: flex; flex-direction: column; gap: 4px; margin-left: auto; }
+      .theme-toggle { margin-left: 8px; order: 4; }
       .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--texte); border-radius: 1px; }
       .nav-links.open {
         display: flex; flex-direction: column;
