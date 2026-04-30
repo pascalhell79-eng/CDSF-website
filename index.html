@@ -13,7 +13,7 @@
   <meta property="og:url"          content="https://www.dentisteframbach.com/">
   <meta property="og:title"        content="Cabinet Dentaire Stéphanie Frambach — Dentiste à Fléron">
   <meta property="og:description"  content="Cabinet dentaire généraliste à Fléron. Soins dentaires, diagnostic, détartrage, prothèses, endodontie. Rendez-vous au 04 355 36 55.">
-  <meta property="og:image"        content="https://www.dentisteframbach.com/images/cabinet.jpg">
+  <meta property="og:image"        content="https://www.dentisteframbach.com/images/siege.png">
   <meta property="og:image:width"  content="1449">
   <meta property="og:image:height" content="1085">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -107,11 +107,16 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      width: 100%;
       padding: 0 2rem;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      height: 64px;
     }
     .nav-brand {
       display: flex;
@@ -808,6 +813,7 @@
 
   <!-- NAVIGATION -->
   <nav id="nav">
+    <div class="nav-inner">
     <a href="index.html" class="nav-brand">
       <img
         src="images/logo-frambach.svg"
@@ -832,6 +838,7 @@
       <li><a href="urgences.html">Urgences</a></li>
       <li><a href="contact.html" class="nav-cta">Contact</a></li>
     </ul>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -965,7 +972,7 @@
     <div class="cabinet-inner">
       <div class="cabinet-photo">
         <div class="cabinet-photo-placeholder">
-          <img src="images/cabinet.jpg" alt="Le cabinet dentaire Stéphanie Frambach à Fléron">
+          <img src="images/siege.png" alt="Le cabinet dentaire Stéphanie Frambach à Fléron">
         </div>
         <div class="photo-badge">Fléron · Liège</div>
       </div>
