@@ -444,7 +444,6 @@
       border-radius: 6px;
       overflow: hidden;
       background: var(--surface-alt);
-      aspect-ratio: 16/9;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -452,9 +451,8 @@
     }
     .cabinet-photo img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      height: auto;
+      object-fit: contain;
       display: block;
     }
     .cabinet-photo-placeholder svg { width: 40px; height: 40px; stroke: var(--orange); fill: none; stroke-width: 1; opacity: 0.5; }
@@ -964,7 +962,7 @@
     <div class="cabinet-inner">
       <div class="cabinet-photo">
         <div class="cabinet-photo-placeholder">
-          <img src="images/IMG_3360.JPG" alt="Le cabinet dentaire Stéphanie Frambach à Fléron">
+          <img src="images/cabinet.JPG" alt="Le cabinet dentaire Stéphanie Frambach à Fléron">
         </div>
         <div class="photo-badge">Fléron · Liège</div>
       </div>
