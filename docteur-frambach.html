@@ -276,7 +276,6 @@
       animation: fadeUp 0.6s 0.2s ease both;
     }
     .photo-frame {
-      aspect-ratio: 3/4;
       border-radius: 6px;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.12);
@@ -287,6 +286,12 @@
       gap: 14px;
       overflow: hidden;
       position: relative;
+    }
+    .photo-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
     }
     .photo-frame::after {
       content: '';
@@ -708,8 +713,7 @@
       </div>
       <div class="hero-photo">
         <div class="photo-frame">
-          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <p>Photo à ajouter</p>
+          <img src="images/dentiste4.png" alt="Stéphanie Frambach, dentiste généraliste à Fléron" />
           <div class="photo-caption">
             <strong>Stéphanie Frambach</strong>
             <span>Dentiste généraliste · Fléron</span>
